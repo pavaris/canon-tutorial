@@ -1,3 +1,3 @@
 # Canon Tutorial Page
 
-A redesign of a hardware tutorials page
+A redesign of a hardware tutorials webpage
