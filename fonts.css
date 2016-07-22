@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "opticsans_light";
+  src: url('fonts/OpticSans-101-Light.eot');
+  src: url('fonts/OpticSans-101-Light.woff') format('woff'),
+       url('fonts/OpticSans-101-Light.svg#opticsans light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "opticsans_book";
+  src: url('fonts/OpticSans-201-Book.eot');
+  src: url('fonts/OpticSans-201-Book.woff') format('woff'),
+  	   url('fonts/OpticSans-201-Book.ttf') format('truetype'),
+       url('fonts/OpticSans-201-Book.svg#opticsans_book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

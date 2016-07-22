@@ -1,0 +1,21 @@
+{
+  "name": "Canon Learning Series",
+  "version": "1.2.0",
+  "description": "See Impossible",
+    "main": "index.html",
+    "window": {
+        "toolbar": false,
+        "position": "center",
+        "width": 1280,
+        "height": 700,
+        "min_width": 700,
+        "min_height": 550,
+        "title": "Canon Learning Series",
+        "icon": "icon.png"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "MIT"
+}

@@ -1,0 +1,244 @@
+body{
+    font-family: 'opticsans_light';
+    background-color: black;
+    color: white;    
+    font-size: 10px;
+    
+    
+    -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+    
+}
+
+.navbar{
+    background-color: black;
+    text-decoration: none;
+    height: 72px;
+}
+
+/*Search results list*/
+ul li{
+    font-size: 15px;
+}
+/*Search Text*/
+input{
+    color: black;
+    margin-top: 45px;
+    margin-right: 50px;
+    width: 300px;
+}
+
+
+/*Header section, background*/
+.intro {
+    display: table;
+    width: 100%;
+    height: 100%;
+    padding: 300px 0;
+    text-align: center;
+    color: #fff;
+    background: url(../img/photon.jpg) no-repeat scroll center;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: contain;
+    -o-background-size: cover;
+    margin-top: -111px;
+}
+
+/*"Customer Learning Series"*/
+.intro .intro-body {
+    display: table-cell;
+    vertical-align: middle;
+    
+}
+
+.brand-heading{
+    margin-top: 90px;
+}
+
+ .intro .intro-body .brand-heading {
+        font-size: 53px;
+    }
+
+
+
+@media(min-width:901px) {
+   
+    .intro .intro-body .brand-heading {
+        font-size: 53px;
+        margin-left: 35px;
+    }
+    
+    .navbar-right {
+    float: right !important;
+    text-align: center;
+
+  }
+    
+    
+}
+
+@media(max-width:900px){
+    .intro{
+        background: none;
+        text-align: center;
+    }
+    
+    nav img{
+        height: 50px;
+    }
+    
+    .navbar-brand{
+        float: none !important;
+        text-align: center;        
+    }
+    
+    .intro .intro-body .brand-heading {
+        font-size: 40px;
+    }
+    
+    .navbar-collapse{
+        text-align: center !important;
+       
+    }
+    
+    input{
+        width: 200px;
+    }
+    
+     .navbar-right {
+        text-align: center !important;
+        position: absolute;         
+     }
+    
+    .nav{
+         position: absolute;
+     }
+    
+    .navbar-nav{
+         position: absolute;
+        left: 33%;
+        top: 26%;
+       
+     }
+    
+    .navbar{
+        background-color: black;
+        text-decoration: none;
+        height: 110px;
+    }
+    
+}
+
+
+/*Section titles*/
+.section-title{
+    line-height: .8;
+    font-size: 40px;
+    counter-increment: item 
+
+    
+}
+
+
+/*List formatting (1.1, 1.2, 1.3,...)*/
+ol{ 
+    counter-reset: item
+}
+
+ol li { 
+    display: block;
+    font-size: 20px;
+}
+
+ol li ol li:before {
+    content: counters(item, ".") " "; 
+    counter-increment: item 
+}
+
+
+/*Scroll Button*/
+.btn-circle{
+    position:relative;
+    bottom: -100px;
+    left: 0;
+    right: 0;
+}
+
+
+/*Footer bar*/
+hr{
+  display: block; 
+  height: 1px;
+  border: none; 
+  border-top: 1px solid #999;
+}
+
+/*Read PDF Button*/
+.read-button{
+    height: 45px;
+    width: 140px;
+    background-color: #CC0000;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 45px;
+    border: none;
+    box-shadow: none;
+}
+
+
+/*Link settings*/
+a:visited{
+    text-decoration: none;
+    color: white;
+    
+}
+
+a:active{
+    text-decoration: none;
+    color: white;
+    box-shadow: none;
+    outline: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+
+a:focus{
+    box-shadow: none;
+    outline: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    text-decoration: none;
+    color: gray;
+}
+
+
+.modal-body{
+    max-width: 100000px;
+    overflow: visible;
+}
+
+button:focus{
+    outline: 0;
+    box-shadow: none !important;
+}
+
+
+
+/*JQUERY*/
+
+.ui-widget{
+    font-family: 'opticsans_light';
+    font-size: 1px;
+}

@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+  <head>    
+      <title>Canon Learning Series</title>
+      <script type="text/javascript" src="js/script.js"></script>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/bootstrap.css" />
+      <link rel="stylesheet" href="css/app.css" />
+      <link rel="stylesheet" href="fonts.css" />
+      <link rel="stylesheet" href="css/jquery-ui.min.css">
+      <script src="js/jquery-2.1.4.js"></script>
+      <script src="js/jquery-ui.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/smooth-scroll.js"></script>
+      
+
+      
+<!-- MAC GLOBAL MENUBAR -->
+      <script>
+         var gui = require('nw.gui');
+
+        // Create menu container
+        var windowMenu = new gui.Menu({
+            type:   'menubar'
+        });
+
+        //initialize default mac menu
+        windowMenu.createMacBuiltin("Canon Learning Series");
+
+        // Append Menu to Window
+        gui.Window.get().menu = windowMenu;
+
+        //Append item1 tab
+        /*             
+         //Declare navigate Tab
+        var navigate = new gui.Menu();
+
+        windowMenu.append(new gui.MenuItem({
+          label: 'Navigate',
+          submenu: navigate
+        }));
+
+        navigate.append(new gui.MenuItem({ label: 'Search Page'}));
+        */
+          
+          
+        //Declare Help Menu
+        var helpMenu = new gui.Menu();
+          
+        //Append Help Menu
+        windowMenu.append(new gui.MenuItem({
+          label: 'Help',
+          submenu: helpMenu
+        }));
+
+        helpMenu.append(new gui.MenuItem ({
+         label: 'Canon Learning Help',
+         click: function(){
+            var win = gui.Window.open('http://canonusa.com', {
+            position: 'center',
+            width: 1000,
+            height: 600
+            });
+         }
+        }));
+
+       
+      </script>    
+      
+        
+      
+      
+      
+      
+<!--SEARCH BAR ITEMS-->
+<!--Pages array contains the video title and link to modals-->
+      
+      <script>
+      $(function() {
+
+          var pages =[
+              {label: "Submitting Documents for Secure Printing",
+               link:  "#myModal1"},
+
+              {label: "Registering My Badge",
+               link:  "#myModal2"},
+
+              {label: "Printing With Secure Print",
+               link:  "#myModal3"},
+
+              {label: "Printing from My Mobile Device",
+               link:  "#myModal4"},
+
+              {label: "Printing from a Guest's Mobile Device",
+               link:  "#myModal5"},
+
+              {label: "Scanning and Sending Documents",
+               link:  "#myModal6"}
+              
+              
+          ]
+
+        $( "#tags" ).autocomplete({
+          source: pages,
+            select: function(e, ui){
+                $(ui.item.link).modal('show');
+            }
+
+        });
+      });         
+    </script>
+    
+
+<!--RESTART VIDEOS AFTER CLOSING MODALS-->      
+    <script>      
+        $(document).on('hidden.bs.modal', function (e) {
+         $('video').load();
+        });
+    </script>
+
+<!--SMOOTH SCROLLING-->
+    <script>
+        smoothScroll.init({
+            offset: 75
+        });
+    </script>
+    
+      
+ </head>
+    
+    
+    
+    
+    
+    
+    
+    
+    <body>
+      
+<!--NAVIGATION BAR-->
+<!--Contains Canon See Impossible Logo & Search Bar-->
+        <nav class="navbar navbar-fixed-top">
+          <div class="navbar-brand">
+            <!-- Brand and toggle get grouped for better mobile display -->
+<a href="#"><img height="57" src="img/CanonSeeImpossible_BLK_SM.jpg" draggable="false" /></a>
+              
+            </div><!-- /.navbar-collapse -->
+            
+            <div class="navbar-collapse">
+              <ul class="navbar-nav nav navbar-right">
+                <li>SEARCH: <input id="tags"></li>  
+                  
+                <li></li>
+    
+              </ul>
+              </div>
+            
+        </nav>
+    
+    
+            
+        
+    
+    
+<!--HEADER SECTION WITH BACKGROUND AND SCROLL BUTTON-->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">CUSTOMER LEARNING SERIES</h1>
+                        <div class="btn-circle">
+                        <a data-scroll href="#sections">
+                            <img src="img/button.png" />
+                            
+                        </a>
+                        </div> 
+                       
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </header>
+
+ 
+        
+<!--SECTION SCROLL LINK-->   
+        <span id="sections">
+            <h1 style="padding-top: 120px; margin-top: 100px;"></h1>
+        </span>   
+        
+        
+
+    <div class="container">    
+     <span id="section1"></span>
+    
+        
+<!--SECTIONS BEGIN-->
+        <ol>
+            
+            
+<!--SECTION 1 BEGINS-->    
+          <li class="col-md-6">  
+            
+            <div class="section-title">Section 1</div> 
+            <div style="font-size: 21px"><i>USING THE uniFLOW SYSTEM</i></div>
+            
+                <ol>     
+                    
+                    
+<!--SECTION 1.1-->                                     
+                    <li> - <a data-toggle="modal" href="#myModal1"> Submitting Documents for Secure Printing</a>
+                        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                          <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Submitting Documents for Secure Printing</h4>
+                              </div>
+                              <div class="modal-body">
+                                <video class="img-responsive" controls poster="img/print_submit.jpg">
+                                <source src="videos/NAD_secured_print_submit_captions.mp4" type = "video/mp4"/>
+                                </video>
+                                <br>
+                                <a href="pdf/NAD_secure_print_submit_instructions.pdf" target="_blank"> <button class="read-button">READ PDF</button></a>
+                              </div>      
+                            </div>
+                          </div>
+                        </div>  
+                    </li>
+                    
+                    
+                    
+                    
+                    
+<!--SECTION 1.2-->                                        
+                    <li> - <a data-toggle="modal" href="#myModal2"> Registering My Badge</a>
+                         <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                          <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Registering My Badge</h4>
+                              </div>
+                              <div class="modal-body">
+                                <video class="img-responsive" controls poster="img/register_badge.jpg">                                         
+                                <source src="videos/NAD_register_badge_captions.mp4" type="video/mp4"/>
+                                </video>
+                                <br>
+                                  <a href="pdf/NAD_register_badge_instructions.pdf" target="_blank"><button class="read-button">READ PDF</button></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>       
+                    </li>
+                    
+
+                    
+                    
+                    
+<!--SECTION 1.3-->                        
+                    <li> - <a data-toggle="modal" href="#myModal3">  Printing With Secure Print</a>
+                        <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                          <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Printing With Secure Print</h4>
+                              </div>
+                              <div class="modal-body">
+                                <video class="img-responsive" controls poster="img/print_retrieve.jpg">
+                                    <source  src="videos/NAD_secured_print_retrieve_captions.mp4" type="video/mp4" />
+                                </video>
+                                <br>
+                                  <a href="pdf/NAD_secure_print_retrieve_instructions.pdf" target="_blank"><button class="read-button">READ PDF</button></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>  
+                    </li>
+                 
+                    
+                    
+                    
+<!--SECTION 1.4-->                        
+                   
+                    <li> - <a data-toggle="modal" href="#myModal4"> Printing from My Mobile Device</a>
+                        <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                          <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Printing from My Mobile Device</h4>
+                              </div>
+                              <div class="modal-body">
+                                <video class="img-responsive" controls poster="img/mobile_employee.jpg">
+                                <source src="videos/NAD_mobile_print_employee_captions.mp4" type="video/mp4">
+                                </video>
+                                <br>
+                                  <a href="pdf/NAD_mobile_print_employee_instructions.pdf" target="_blank"><button class="read-button">READ PDF</button></a>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </li>      
+                    
+                    
+                    
+ <!--SECTION 1.5-->                        
+                   <li> - <a data-toggle="modal" href="#myModal5"> Printing from a Guest's Mobile Device</a>
+                    <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                      <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Printing from a Guest's Mobile Device</h4>
+                          </div>
+                          <div class="modal-body">
+                            <video class="img-responsive" controls poster="img/mobile_guest.jpg">
+                                <source src="videos/NAD_mobile_print_guest_captions.mp4" type="video/mp4">    </video>
+                            <br>
+                               <a href="pdf/NAD_mobile_print_guest_instructions.pdf" target="_blank"><button class="read-button">READ PDF</button></a>
+                            </div>
+                          </div>
+                       </div>
+                       </div>
+                    </li>    
+                    
+<!--SECTION 1.6-->                                         
+                    <li>- <a data-toggle="modal" href="#myModal6"> Scanning and Sending Documents</a>
+                        <div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="myModalLabel">Scanning and Sending Documents</h4>
+                                </div>
+                          <div class="modal-body">
+                            <video class="img-responsive" controls poster="img/scan_send.jpg">
+                                <source src="videos/NAD_scan_send_captions.mp4" type="video/mp4">
+                            </video>
+                            <br>
+                               <a href="pdf/NAD_scan_send_instructions.pdf" target="_blank"><button class="read-button">READ PDF</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </li>           
+
+                    
+       
+                    
+                    
+              </ol>
+<!--END OF SUB ELEMENTS-->            
+            
+                <br><br>
+            </li>
+<!--SECTION 1 ENDS -->
+                     
+                
+<!--SECTION 2 BEGINS                 
+        <li class="col-md-6">
+            <div class="section-title">Section 2</div> 
+            <div style="font-size: 21px"><i>SUPPORTING TITLE</i></div>
+
+            <ol>
+SECTION 2.1
+                <li> - <a data-toggle="modal" href="#myModal_">TOPIC 1</a>
+                    <div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="myModalLabel">MODAL TITLE</h4>
+                                </div>
+                          <div class="modal-body">
+                            <video class="img-responsive" controls poster="img/______.jpg">
+                                <source src="videos/________________.mp4" type="video/mp4">
+                            </video>
+                            <br>
+                               <a href="pdf/__________________.pdf" target="_blank"><button class="read-button">READ PDF</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+
+SECTION 2.2            
+                <li> - <a data-toggle="modal "href="#myModal_">TOPIC 2</a>
+                     <div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="myModalLabel">MODAL TITLE</h4>
+                                </div>
+                          <div class="modal-body">
+                            <video class="img-responsive" controls poster="img/______.jpg">
+                                <source src="videos/________________.mp4" type="video/mp4">
+                            </video>
+                            <br>
+                               <a href="pdf/__________________.pdf" target="_blank"><button class="read-button">READ PDF</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+
+
+            </ol>
+
+
+        </li>
+END OF SECTION 2
+-->
+        
+            
+            
+            
+            
+            
+            
+        </ol>
+<!--ALL SECTIONS END-->
+
+        
+    </div>        
+<!--SECTION CONTAINER CLOSED-->
+        
+<!--BLANK FILLER-->
+        <br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br>
+        
+        
+<!--FOOTER-->        
+        <hr>
+        <div class="container" style="font-size: 12px">
+        © 2015 Canon U.S.A., Inc. All rights reserved.
+        <br><br>
+        </div>
+        
+        
+    
+    </body>
+</html>
